@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QuickBlogs - A lightweight and optimized blogging template. Features dark/light theme, search functionality, and more.">
+    <meta name="author" content="">
+    <meta property="og:title" content="QuickBlogs - Fast & Optimized Blog Template">
+    <meta property="og:description" content="Create and manage your blog with ease using the QuickBlogs template.">
+    <meta property="og:image" content="https://picsum.photos/seed/quickblogs/800/600">
+    <meta property="og:url" content="https://github.com/likhonisaac/QuickBlogs">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QuickBlogs - Blog Template">
+    <meta name="twitter:description" content="A fast, customizable, and optimized blog template.">
+    <meta name="twitter:image" content="https://picsum.photos/seed/quickblogs/800/600">
+    <title>QuickBlogs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="https://picsum.photos/seed/favicon/32/32" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1><i class="fas fa-blog"></i> QuickBlogs</h1>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#" id="themeToggle"><i class="fas fa-moon"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search posts...">
+            <select id="sortSelect">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+            </select>
+        </div>
+
+        <div id="postsContainer" class="posts-grid"></div>
+        
+        <div id="pagination" class="pagination"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 QuickBlogs - <a href="https://github.com/likhonisaac/QuickBlogs">GitHub</a></p>
+            <p>Author: </p>
+            <p><img src="" alt="Author Avatar" width="50"> Bio: </p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
